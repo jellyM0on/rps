@@ -3,9 +3,103 @@
 <head>
     <title>RPS</title>
     <meta charset="utf-8">
-    <script src="./jsprac.js"></script>
+    <style>
+
+.Outer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*padding-top: 20%;
+    padding-bottom:20%; */
+}
+.Styles {
+    display: flex; 
+    justify-content: center;
+    gap: 20%;
+    margin: 5%; 
+    
+}
+button {
+    font-size: 20px;
+    font-family: monospace;
+}
+.rockyroad {
+    background-color: #FFCB77;
+    padding: 20px;
+}
+.scissorsnaps {
+    background-color: #FEF9EF ;
+    padding: 20px;
+}
+
+.papervanilla {
+    background-color: #17C3B2;
+    padding: 20px;
+}
+
+.playerSection 
+.computerSelection {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.winnerDiv {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+    </style>
 </head>
 <body>
+    <div class = Outer>
+    <div class = "score">
+        <h1 class = "ties">Ties: 0</h1>
+    </div>
+    <div class="winnerDiv">
+        <h1 class="winner"></h1>
+        <button class="stylereset" id = "resetBtn">Play Again</button>
+    </div>
+    <div class="playerSection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Score: 0</h3>
+        <div class = Styles> 
+            <button class = "aButton rockyroad" id = "rock" > Rock </button>
+            <button class = "aButton papervanilla" id = "paper"> Paper </button>
+            <button class = "aButton scissorsnaps" id = "scissors"> Scissors </button>
+        </div>
+    </div>
+
+    <div class="computerSection">
+        <h3 class="computerChoice"></h3>
+        <h3 class="computerScore">Score: 0</h3>
+        <div class = Styles> 
+            <button class = "aButton rockyroad"> Rock </button>
+            <button class = "aButton papervanilla"> Paper </button>
+            <button class = "aButton scissorsnaps"> Scissors </button>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+  
 
 </body>
+<script src="./jsprac.js"></script>
 </html>
+
